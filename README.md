@@ -95,7 +95,7 @@ src/
 
 ## 🧑‍💻 Autor
 
-Desarrollado por [Carlos](https://github.com/CXarlosss).  
+Desarrollado por [Carlos De Petronila Rodríguez](https://github.com/CXarlosss).  
 Con ❤️ y muchas ganas de aprender.
 
 ---
