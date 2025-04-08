@@ -30,7 +30,7 @@ Una aplicación web moderna para dividir gastos en grupo, inspirada en Tricount.
 1. **Clona el proyecto:**
 
 ```bash
-git clone https://github.com/tu-usuario/tricount-clone.git
+git clone https://github.com/CXarlosss/tricount-clone.git
 cd tricount-clone
 ```
 
@@ -95,11 +95,9 @@ src/
 
 ## 🧑‍💻 Autor
 
-Desarrollado por [Carlos](https://github.com/tu-usuario).  
+Desarrollado por [Carlos](https://github.com/CXarlosss).  
 Con ❤️ y muchas ganas de aprender.
 
 ---
 
-## 📜 Licencia
 
-Este proyecto está bajo la Licencia MIT.
