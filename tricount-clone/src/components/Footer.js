@@ -11,7 +11,9 @@ export const Footer = () => {
           Hecho por Carlos &nbsp;•&nbsp; {new Date().getFullYear()}
         </p>
         <div className="footer-links">
-        <a href="https://github.com/CXarlosss" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/tuUsuario" target="_blank" rel="noopener noreferrer">
+  GitHub
+</a> 
           <a href="carlosdepet@gmail.com">Contacto</a>
           <a href="#">Política de privacidad</a>
         </div>

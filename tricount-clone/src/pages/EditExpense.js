@@ -8,7 +8,7 @@ import {
   getDoc,
   updateDoc
 } from "firebase/firestore";
-import { db } from "../firebase/config";
+import { db } from "../firebase/config"; // ✅ solo lo que se usa
 import "../styles/editExpense.css";
 
 export const EditExpense = () => {
