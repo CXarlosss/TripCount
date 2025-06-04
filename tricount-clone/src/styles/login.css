@@ -58,4 +58,30 @@
     font-weight: bold;
     cursor: pointer;
   }
-  
+  /* login.css */
+.auth-button, .google-button {
+  padding: 10px 20px;
+  background-color: #1f2937;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+.auth-button:hover, .google-button:hover {
+  background-color: #111827;
+}
+.toggle-mode {
+  background: none;
+  border: none;
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: bold;
+}
+.or {
+  text-align: center;
+  margin: 20px 0 10px;
+}

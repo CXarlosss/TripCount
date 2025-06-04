@@ -1,8 +1,13 @@
 // @ts-nocheck
 import { auth } from "../firebase/config";
 import React from "react";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import LoginWithGoogle from "../components/LoginWithGoogle";
+
 import "../styles/login.css";
 export const Login = () => {
   const navigate = useNavigate();
@@ -35,7 +40,6 @@ export const Login = () => {
       // ✅ Guardar auth y redirigir
       localStorage.setItem("isAuth", true);
       navigate("/dashboard");
-
     } catch (error) {
       alert("Error: " + error.message);
       console.error("Error: ", error.message);
@@ -43,7 +47,7 @@ export const Login = () => {
   };
 
   return (
-    <div  style={{ maxWidth: "400px", margin: "auto", padding: "2rem" }}>
+    <div style={{ maxWidth: "400px", margin: "auto", padding: "2rem" }}>
       <h2>{isRegistering ? "Registrarse" : "Iniciar sesión"}</h2>
       <form onSubmit={handleAuth}>
         <input
@@ -52,14 +56,16 @@ export const Login = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-        /><br />
+        />
+        <br />
         <input
           type="password"
           placeholder="Contraseña"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
-        /><br />
+        />
+        <br />
         <button type="submit">
           {isRegistering ? "Crear cuenta" : "Entrar"}
         </button>
@@ -70,6 +76,10 @@ export const Login = () => {
           {isRegistering ? "Inicia sesión" : "Regístrate"}
         </button>
       </p>
+
+      <div style={{ marginTop: "1rem" }}>
+        <LoginWithGoogle />
+      </div>
     </div>
   );
 };
